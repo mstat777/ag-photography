@@ -1,0 +1,24 @@
+@import '../../../variables.scss';
+
+.comment {
+    border: 1px solid $grey-color;
+    margin-bottom: 4px;
+    padding: .6rem;
+
+    .comment_top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+
+        .user {
+            font-weight: 600;
+        }
+
+        .date {
+
+        }
+    }
+    .message {
+        font-size: 1.2rem;
+    }
+}

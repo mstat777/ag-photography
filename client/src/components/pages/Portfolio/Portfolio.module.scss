@@ -11,16 +11,83 @@
     }
 
     .portfolio_section {
-        .filters_section {
+        .navbar_section {
             background-color: $secondary-color;
             display: flex;
+            padding: 10px;
 
             @media screen and (min-width: $tablet) {
                 height: 50px;
+                padding: unset;
             }
         }
 
-        .images_section {
+        .content_section {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: $tablet) { 
+                flex-direction: row;
+            }
+
+            .slideshow_ctn {
+                @media screen and (min-width: $tablet) { 
+                    width: calc(100% - 260px);
+                }
+            }
+            .info_ctn {
+                position: relative;
+                padding: 30px 20px 10px;
+                font-size: 1.4rem;
+                text-align: left;
+                color: $lightgrey-color;
+                background-color: $darkgrey-color;
+                @media screen and (min-width: $tablet) { 
+                    width: 260px;
+                }
+
+                .hide_palette_btn {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25px;
+                    height: 25px;
+                    border: none;
+                    border-radius: 50%;
+                    color: $primary-color;
+                    background-color: inherit;
+                    transition: color .4s;
+                    &:hover {
+                        cursor: pointer;
+                        color: $lightgrey-color;
+                    }
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+
+                dl {
+                    dt,
+                    dd {
+                        display: inline-block;
+                        width: 40%;
+                        margin-bottom: 10px;
+                    }
+                    dd {
+                        width: 60%;
+                    }
+                }
+
+                .comments_section {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .countries_section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             width: 100%;
