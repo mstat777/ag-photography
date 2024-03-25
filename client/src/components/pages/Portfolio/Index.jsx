@@ -1,7 +1,7 @@
 import global from '../../../App.module.scss';
 import styles from './Portfolio.module.scss';
 import { useState, useEffect } from 'react';
-import { Link, NavLink, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import imageData from '../../../assets/data/images.json';
 import Slideshow from '../../containers/Slideshow/Index';
 import ContinentNavBar from '../../containers/ContinentNavBar/Index';
@@ -29,7 +29,7 @@ export default function Portfolio(){
                 <section className={styles.portfolio_section}>
 
                     <section className={styles.filters_section}>
-                        <ContinentNavBar/>
+                        <ContinentNavBar continent={continent}/>
                     </section>
          
                     { continent && country ?

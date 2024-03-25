@@ -8,16 +8,21 @@
         margin: auto 3rem;
     }
 
-    button {
+    a {
         margin: .2rem 1rem;
         padding: .4rem .8rem;
         border: none;
+        font-size: 1.4rem;
         text-transform: capitalize;
         color: $tertiary-color;// black; //
         background-color: transparent; // $tertiary-color; //
         transition: .4s;
         &:hover {
             color: $primary-color;
+        } 
+        &[class="active"] {
+            color: black;
+            background-color: $tertiary-color;
         }
     }
 }
