@@ -1,0 +1,26 @@
+@import '../../../variables.scss';
+
+.home_section {
+    height: auto;
+    margin: 3rem;
+    padding-bottom: 3rem;
+
+    h1 {
+        margin: 2.5rem auto;
+        font-size: 3rem;
+    }
+    p {
+        text-align: justify;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        max-width: 900px;
+        margin: 5rem;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 900px;
+        margin: 5rem auto;
+    }
+}

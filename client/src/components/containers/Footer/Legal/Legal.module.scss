@@ -1,0 +1,11 @@
+@import '../../../../variables.scss';
+
+.footer_legal {
+    width: 100%;
+    //background-color: $grey-color;
+    p {
+        display: block;
+        font-size: 1.2rem;
+        color: $grey-color;// black;
+    }
+}

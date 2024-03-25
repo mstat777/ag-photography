@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //width: 100%;
+    height: 35px;
+    margin-top: auto;
+    //padding: 1.5rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: $secondary-color;
+    
+    @media screen and (min-width: $tablet) {   
+        width: calc(100% - 160px);
+        margin-left: 160px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+
+    &_links {
+        @media screen and (min-width: $desktop) {
+            max-width: 1100px;
+            display: flex;
+        }
+    }
+}

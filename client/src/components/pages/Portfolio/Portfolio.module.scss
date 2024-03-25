@@ -1,0 +1,86 @@
+@import '../../../variables.scss';
+
+.portfolio_main {
+    @media screen and (min-width: $tablet) {   
+        width: calc(100% - 160px);
+        margin-left: 160px;
+    }
+    @media screen and (min-width: $desktop) {   
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+
+    .portfolio_section {
+        .filters_section {
+            background-color: $secondary-color;
+            display: flex;
+
+            @media screen and (min-width: $tablet) {
+                height: 50px;
+            }
+        }
+
+        .images_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            @media screen and (min-width: $tablet) {   
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media screen and (min-width: $desktop) {   
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            &:hover {
+                .destination {
+                    opacity: 0.3;
+                }
+            }
+
+            .destination {
+                position: relative;
+                aspect-ratio: 4/3;
+                background-color: bisque;
+                color: black;
+                overflow: hidden;
+                transition: all 1s;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+
+                    p {
+                        transition: all 1s;
+                        opacity: 1;
+                        color: $secondary-color;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    display: inline-block;
+                    margin: 0 2rem 0 0;
+                    padding: .4rem .8rem;
+                    border-radius: 4px;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: left;
+                    color: black;
+                    background-color: white;
+                    transition: all 1s;
+                    @media screen and (min-width: $tablet) {   
+                        opacity: 0;
+                    }
+                }
+                img {
+                    min-height: 100%;
+                    max-height: unset;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

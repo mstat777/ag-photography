@@ -1,0 +1,45 @@
+@import '../../../variables.scss';
+
+.about_main {
+    display: flex;
+    //height: calc(100% - 35px);
+    background-color: $primary-color;
+
+    @media screen and (min-width: $tablet) {   
+        width: calc(100% - 160px);
+        margin-left: 160px;
+    }
+    @media screen and (min-width: $desktop) {   
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+
+    .about_section {
+        margin: 3rem;
+        padding: 30px;
+
+        @media screen and (min-width: $desktop) {
+            width: calc(100% - 300px);
+        }
+
+        h1 {
+            margin: 2.5rem auto;
+            font-size: 3rem;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+
+    .images_section {
+        display: none;
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            //height: 100vw;
+            overflow: hidden;
+        }
+    }
+}

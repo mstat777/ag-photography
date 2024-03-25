@@ -1,0 +1,9 @@
+# dependencies
+/client/node_modules
+# production
+/client/build
+# misc
+/client/not_to_build
+/client/public/img
+/client/.env
+/img

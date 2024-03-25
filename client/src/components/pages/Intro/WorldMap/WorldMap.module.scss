@@ -1,0 +1,35 @@
+@import '../../../../variables.scss';
+
+.svgMap {
+    //margin: calc(100vh - 100px - ) 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    border: 5px solid black;
+    g {
+        width: 100%;
+    }
+    .water {
+        path {
+            fill: transparent;
+        }
+    }
+    .map_border {
+        path {
+            fill: transparent;
+        }
+    }
+    .continent { 
+        &:hover {
+            cursor: pointer;
+
+            path {
+                fill: red; // $tertiary-color; // red;
+            }
+        }
+        
+        path {
+            fill: black;
+            transition: fill .5s;
+        }
+    }
+}

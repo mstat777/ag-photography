@@ -1,0 +1,15 @@
+$primary-color: white;                  // 60% // les fonds (forms, backgrounds)
+$secondary-color: #1a1a1a; //(original) // 30% // les fonds (header, footer)
+$tertiary-color: #ffdd00; //#009dc0; (original)    // 10% // les boutons
+
+$highlight-color: rgb(231, 19, 105);      // souligner certains textes, erreurs
+
+$darkgrey-color: #333;                  // les textes de saisie (input, textarea, select)
+$grey-color: grey;
+$lightgrey-color: rgb(204, 204, 204);   // les bordures des champs et des tableaux
+$verylightgrey-color: #f9f9f9;          // distinguer les lignes de tableau
+$main-font: 'Lato', sans-serif;           // la police principale
+
+// Breakpoints pour les media queries :
+$tablet: 768px;
+$desktop: 1100px;

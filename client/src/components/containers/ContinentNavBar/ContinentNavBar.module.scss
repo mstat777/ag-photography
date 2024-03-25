@@ -1,0 +1,23 @@
+@import '../../../variables.scss';
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: $tablet) {
+        margin: auto 3rem;
+    }
+
+    button {
+        margin: .2rem 1rem;
+        padding: .4rem .8rem;
+        border: none;
+        text-transform: capitalize;
+        color: $tertiary-color;// black; //
+        background-color: transparent; // $tertiary-color; //
+        transition: .4s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
