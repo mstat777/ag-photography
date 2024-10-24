@@ -27,30 +27,27 @@
         }
 
         .slideshow_btn {
+            position: absolute;
             height: 50px;
             width: 50px;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             border: none;
             border-radius: 50%;
             color: white;
-            background-color: rgba(176, 176, 176, 0.6);
+            background-color: transparent;// rgba(176, 176, 176, 0.6);
             transition: all .4s;
             &:hover {
                 cursor: pointer;
-                background-color: rgba(176, 176, 176, 0.8);
+                color: $tertiary-color;
 
-                img {
-                    filter: invert(76%) sepia(19%) saturate(3163%) hue-rotate(3deg) brightness(111%) contrast(110%);
+                .arrow {
+                    color: $tertiary-color;
                 }
             }   
 
-            img {
-                height: 30px;
-                width: 30px;
-                pointer-events: none;
+            .arrow {
+                height: 50px;
+                width: 50px;
+                filter: drop-shadow(0 0 2px $secondary-color);
             }
         }
     }
@@ -65,15 +62,11 @@
         overflow: hidden;
 
         .thumbnail {
-            //width: 500px;
-            height: 100px;
-            aspect-ratio: 3/2;
             margin: 10px 5px;
-            overflow: hidden;
 
             img {
-                height: 100%;
-                width: 100%;
+                height: 80px;
+                width: 120px;
                 object-fit: cover;
                 transition: opacity .4s;
                 &:hover {
@@ -87,11 +80,11 @@
 
 .next {
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-60%);
 }
 .prev {
     top: 50%;
-    left: 20px;
+    left: 10px;
     transform: translateY(-60%);
 }
