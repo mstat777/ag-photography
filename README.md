@@ -30,11 +30,11 @@ A web application for a hobby photographer.
 The user can browse photos from different countries grouped by continent.
 
 **Home Page**<br/>
-Interactive map
+Interactive map<br/>
 <img src="https://ag.mitkostatev.com/other/home-desktop.jpg" width="600" height="281"/>
 
 **Portfolio Page**<br/>
-Browse a country, continent filter
+Browse a country, continent filter<br/>
 <img src="https://ag.mitkostatev.com/other/europe-desktop.jpg" width="600" height="356"/>
 
 **Slideshow**<br/>
