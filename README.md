@@ -31,18 +31,18 @@ The user can browse photos from different countries grouped by continent.
 
 **Home Page**<br/>
 Interactive map<br/>
-<img src="https://ag.mitkostatev.com/other/home-desktop.jpg" width="600" height="281"/>
+<img src="https://ag.mitkostatev.com/other/ag-photography-home-desktop.png" width="800"/>
 
 **Portfolio Page**<br/>
 Browse a country, continent filter<br/>
-<img src="https://ag.mitkostatev.com/other/europe-desktop.jpg" width="600" height="356"/>
+<img src="https://ag.mitkostatev.com/other/ag-photography-continent-desktop.png" width="800"/>
 
 **Slideshow**<br/>
-<img src="https://ag.mitkostatev.com/other/norway-desktop.jpg" width="600" height="357"/>
+<img src="https://ag.mitkostatev.com/other/ag-photography-slider-desktop.png" width="800"/>
 
 ## Contact
 
 Dimitar Statev<br/>
-Email: &nbsp;  statedv@gmail.com<br/>
+Email: &nbsp;  statevd@gmail.com<br/>
 GitHub: &nbsp;  https://github.com/mstat777<br/>
-LinkedIn: &nbsp;  https://www.linkedin.com/in/dimitar-statev-34484068
+LinkedIn: &nbsp;  https://www.linkedin.com/in/dimitar-statev/
